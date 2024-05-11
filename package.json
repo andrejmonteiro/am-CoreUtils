@@ -1,15 +1,35 @@
 {
-  "name": "logger",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "winston": "^3.13.0"
-  }
+	"name": "@am/core-utils",
+	"version": "1.0.0",
+	"description": "",
+	"main": "lib/index.js",
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"prepublish": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andrejmonteiro/am-CoreUtils.git"
+	},
+	"keywords": [
+		"core-utils",
+		"utils",
+		"core",
+		"am-core-utils",
+		"utilities"
+	],
+	"author": "André Monteiro",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/andrejmonteiro/am-CoreUtils/issues"
+	},
+	"homepage": "https://github.com/andrejmonteiro/am-CoreUtils",
+	"dependencies": {
+		"winston": "^3.13.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.4.5"
+	}
 }
