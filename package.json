@@ -1,13 +1,13 @@
 {
 	"name": "@andrejmonteiro/core-utils",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "",
 	"main": "lib/index.js",
 	"files": [
 		"lib"
 	],
 	"scripts": {
-		"prepublish": "tsc"
+		"prepublishOnly": "tsc"
 	},
 	"repository": {
 		"type": "git",
@@ -30,6 +30,7 @@
 		"winston": "^3.13.0"
 	},
 	"devDependencies": {
+		"@types/node": "^20.12.11",
 		"typescript": "^5.4.5"
 	}
 }
