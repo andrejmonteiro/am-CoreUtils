@@ -1,5 +1,5 @@
 {
-	"name": "@am/core-utils",
+	"name": "@andrejmonteiro/core-utils",
 	"version": "1.0.0",
 	"description": "",
 	"main": "lib/index.js",
@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/andrejmonteiro/am-CoreUtils.git"
+		"url": "git+https://github.com/andrejmonteiro/am-CoreUtils.git"
 	},
 	"keywords": [
 		"core-utils",
@@ -20,12 +20,12 @@
 		"am-core-utils",
 		"utilities"
 	],
-	"author": "André Monteiro",
+	"author": "andrejmonteiro",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/andrejmonteiro/am-CoreUtils/issues"
 	},
-	"homepage": "https://github.com/andrejmonteiro/am-CoreUtils",
+	"homepage": "https://github.com/andrejmonteiro/am-CoreUtils#readme",
 	"dependencies": {
 		"winston": "^3.13.0"
 	},
