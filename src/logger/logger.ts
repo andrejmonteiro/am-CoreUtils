@@ -1,7 +1,7 @@
 /** @format */
 
 import { TransformableInfo } from "logform";
-import { Logger, createLogger, format, transports } from "winston";
+import { createLogger, format, transports } from "winston";
 
 const custom = {
 	levels: {
