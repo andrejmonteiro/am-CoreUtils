@@ -131,3 +131,4 @@ dist
 
 # Build generated files
 lib
+test
