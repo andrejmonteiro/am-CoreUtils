@@ -3,9 +3,9 @@
 		"target": "ES2022" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
 		"module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
 		"lib": ["ES2022"] /* Specify library files to be included in the compilation. */,
-		"declaration": true /* Generates corresponding '.d.ts' file. */,
-		"declarationMap": true /* Generates a sourcemap for each corresponding '.d.ts' file. */,
-		"sourceMap": true /* Generates corresponding '.map' file. */,
+		"declaration": false /* Generates corresponding '.d.ts' file. */,
+		"declarationMap": false /* Generates a sourcemap for each corresponding '.d.ts' file. */,
+		"sourceMap": false /* Generates corresponding '.map' file. */,
 		"outDir": "lib" /* Redirect output structure to the directory. */,
 		"strict": false /* Enable all strict type-checking options. */,
 		"moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
@@ -13,5 +13,5 @@
 		"forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
 	},
 	"include": ["src/**/*.ts"],
-	"exclude": ["node_modules", "lib"]
+	"exclude": ["node_modules", "lib", "src/test/**/*.ts"]
 }
