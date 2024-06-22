@@ -19,7 +19,10 @@ class Database extends Sequelize {
 		});
 	}
 
-	static getInstance(host: string, user: string, password: string, database: string, port?: number, logging?: any): Sequelize {
+	static getInstance(): Sequelize;
+	static getInstance(host?: string, user?: string, password?: string, database?: string): Sequelize;
+	static getInstance(host?: string, user?: string, password?: string, database?: string, port?: number, logging?: any): Sequelize;
+	static getInstance(host?: string, user?: string, password?: string, database?: string, port?: number, logging?: any): Sequelize {
 		if (!Database.instance) {
 			Database.instance = new Database(host, user, password, database, port, logging);
 		}
