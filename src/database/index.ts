@@ -1,4 +1,5 @@
 /** @format */
 
-import Database from "./database";
+import Database, { DatabaseDialectEnum } from "./database";
+export { DatabaseDialectEnum };
 export default Database;
