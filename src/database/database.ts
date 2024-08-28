@@ -19,7 +19,7 @@ class Database extends Sequelize {
 	private static instance: Sequelize;
 	private static dialect: DatabaseDialectEnum;
 
-	public constructor(
+	private constructor(
 		host: string,
 		user: string,
 		password: string,

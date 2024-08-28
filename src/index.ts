@@ -12,9 +12,9 @@ import Log from "./logger";
  * @module Database
  * @description This module is responsible for connecting to the database
  */
-import Database from "./database";
+import Database, { DatabaseDialectEnum } from "./database";
 
 /**
  * Exports all the modules from the core to be used in the application
  */
-export { Log, Database };
+export { Log, Database, DatabaseDialectEnum };
