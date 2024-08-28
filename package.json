@@ -7,7 +7,9 @@
 		"lib"
 	],
 	"scripts": {
-		"prepublishOnly": "tsc"
+		"prepublishOnly": "tsc",
+		"test": "ts-node .\\src\\test\\test.ts",
+		"publish": "npm publish --access public --tag latest"
 	},
 	"repository": {
 		"type": "git",
