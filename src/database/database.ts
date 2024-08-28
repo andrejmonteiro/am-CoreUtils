@@ -4,7 +4,7 @@ import { Sequelize } from "sequelize";
 import { Logger } from "winston";
 import log from "../logger";
 
-enum DatabaseDialectEnum {
+export enum DatabaseDialectEnum {
 	MYSQL = "mysql",
 	POSTGRES = "postgres",
 	SQLITE = "sqlite",
