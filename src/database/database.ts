@@ -1,14 +1,32 @@
 /** @format */
 
-import { Dialect, Sequelize } from "sequelize";
+import { Sequelize } from "sequelize";
 import { Logger } from "winston";
 import log from "../logger";
 
+enum DatabaseDialectEnum {
+	MYSQL = "mysql",
+	POSTGRES = "postgres",
+	SQLITE = "sqlite",
+	MARIADB = "mariadb",
+	MSSQL = "mssql",
+	DB2 = "db2",
+	SNOWFLAKE = "snowflake",
+	ORACLE = "oracle",
+}
+
 class Database extends Sequelize {
 	private static instance: Sequelize;
-	private static dialect: Dialect;
+	private static dialect: DatabaseDialectEnum;
 
-	public constructor(host: string, user: string, password: string, database: string, port?: number, logging?: boolean | ((msg: any) => Logger)) {
+	public constructor(
+		host: string,
+		user: string,
+		password: string,
+		database: string,
+		port?: number,
+		logging?: boolean | ((msg: any) => Logger)
+	) {
 		if (!Database.dialect) throw new Error("Dialect not set");
 
 		super(database, user, password, {
@@ -21,8 +39,22 @@ class Database extends Sequelize {
 
 	static getInstance(): Sequelize;
 	static getInstance(host?: string, user?: string, password?: string, database?: string): Sequelize;
-	static getInstance(host?: string, user?: string, password?: string, database?: string, port?: number, logging?: any): Sequelize;
-	static getInstance(host?: string, user?: string, password?: string, database?: string, port?: number, logging?: any): Sequelize {
+	static getInstance(
+		host?: string,
+		user?: string,
+		password?: string,
+		database?: string,
+		port?: number,
+		logging?: any
+	): Sequelize;
+	static getInstance(
+		host?: string,
+		user?: string,
+		password?: string,
+		database?: string,
+		port?: number,
+		logging?: any
+	): Sequelize {
 		if (!Database.instance) {
 			Database.instance = new Database(host, user, password, database, port, logging);
 		}
@@ -30,8 +62,8 @@ class Database extends Sequelize {
 		return Database.instance;
 	}
 
-	static setDialect(dialect: string): void {
-		this.dialect = dialect as Dialect;
+	static setDialect(dialect: DatabaseDialectEnum): void {
+		this.dialect = dialect as DatabaseDialectEnum;
 	}
 }
 

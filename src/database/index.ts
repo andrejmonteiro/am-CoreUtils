@@ -1,4 +1,4 @@
 /** @format */
 
-import database from "./database";
-export default database;
+import Database from "./database";
+export default Database;
