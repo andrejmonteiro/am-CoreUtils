@@ -1,4 +1,4 @@
 /** @format */
 
-import logger from "./logger";
-export default logger;
+import Log from "./logger";
+export default Log;
