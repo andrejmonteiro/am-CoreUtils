@@ -2,19 +2,19 @@
 
 /**
  * Core module
- * @module logger
+ * @module Log
  * @description This module is responsible for logging the messages to the console
  */
-import logger from "./logger";
+import Log from "./logger";
 
 /**
  * Core module
- * @module database
+ * @module Database
  * @description This module is responsible for connecting to the database
  */
-import database from "./database";
+import Database from "./database";
 
 /**
  * Exports all the modules from the core to be used in the application
  */
-export { logger, database };
+export { Log, Database };

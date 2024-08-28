@@ -1,13 +1,15 @@
 {
 	"name": "@andrejmonteiro/core-utils",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "",
 	"main": "lib/index.js",
 	"files": [
 		"lib"
 	],
 	"scripts": {
-		"prepublishOnly": "tsc"
+		"prepublishOnly": "tsc",
+		"test": "ts-node .\\src\\test\\test.ts",
+		"publish": "npm publish --access public --tag latest"
 	},
 	"repository": {
 		"type": "git",
