@@ -29,16 +29,19 @@
 	},
 	"homepage": "https://github.com/andrejmonteiro/am-CoreUtils#readme",
 	"dependencies": {
+		"mariadb": "^3.4.0",
+		"mssql": "^11.0.1",
+		"mysql": "^2.18.1",
+		"oracle": "^0.4.1",
+		"postgres": "^3.4.5",
 		"sequelize": "^6.37.3",
+		"snowflake-sdk": "^2.0.2",
+		"sqlite": "^5.1.1",
 		"winston": "^3.13.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.11",
-		"mariadb": "^3.3.1",
-		"mssql": "^11.0.0",
-		"mysql": "^2.18.1",
-		"postgres": "^3.4.4",
-		"sqlite": "^5.1.1",
+		"@types/sequelize": "^4.28.20",
 		"typescript": "^5.4.5"
 	}
 }
